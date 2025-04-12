@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --transition-duration: 200ms;
+}
+
+body {
+  transition: background-color var(--transition-duration) ease-in-out;
+}
+
+.dark body {
+  background-color: #111827;
+}
