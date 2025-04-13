@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BookOpen, LineChart, Leaf, Shield } from 'lucide-react';
 
 // Import components from the original LearningSmartFarming2
-import Chatbot from './LearningSmartFarming2/src/Chatbot';
 import DiseaseAwareness from './LearningSmartFarming2/src/components/DiseaseAwareness';
 import CropPlanning from './LearningSmartFarming2/src/components/CropPlanning';
 import MarketInsights from './LearningSmartFarming2/src/components/MarketInsights';
@@ -10,7 +9,6 @@ import PesticideGuide from './LearningSmartFarming2/src/components/PesticideGuid
 
 export function LearningSmartFarming2() {
   const [activeTab, setActiveTab] = useState<'disease' | 'planning' | 'market' | 'pesticide'>('disease');
-  const [isChatbotVisible, setIsChatbotVisible] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-white dark:from-gray-800 dark:to-gray-900 pt-16">
@@ -64,11 +62,6 @@ export function LearningSmartFarming2() {
           {activeTab === 'planning' && <CropPlanning />}
           {activeTab === 'market' && <MarketInsights />}
           {activeTab === 'pesticide' && <PesticideGuide />}
-        </div>
-
-        {/* Chatbot */}
-        <div className="fixed bottom-4 right-4">
-          <Chatbot isVisible={isChatbotVisible} />
         </div>
       </div>
     </div>

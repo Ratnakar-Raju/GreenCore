@@ -1,4 +1,3 @@
-
 import {  BookOpen, MessageSquare } from 'lucide-react';
  //import { useNavigate } from 'react-router-dom';
 //import {UnderstandingPlantImmunity} from '../Articles/UnderstandingPlantImmunity';
@@ -45,7 +44,7 @@ export default function DiseaseAwareness() {
   ];
  
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 pt-16">
       <h2 className="text-2xl font-semibold text-gray-800">Disease Awareness & Prevention</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
